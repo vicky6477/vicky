@@ -21,4 +21,24 @@ git status
 
 git add
 
+git commit -m "<commit-message>"
+
+```
+
+## Sync local to remote
+
+1. merge based approach
+```
+# load all changes from remote to local
+git pull
+
+# Now all changes are applied to local, push your local changes to remote
+git push
+```
+
+2. rebase
+```
+git fetch origin main
+git rebase
+git push origin main --force
 ```
